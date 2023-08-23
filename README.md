@@ -1,25 +1,34 @@
-# Kythira
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Quick Start
-If you do not have a Kubernetes cluster up and running, use Minikube to quickly set one up. The instructions are laid out below.
+## Getting Started
 
-# Mac
-1. Make sure you have Docker installed on your local machine. https://www.docker.com/products/docker-desktop/
+First, run the development server:
 
-2. Once Docker is installed, run the following command:
-  * `brew install minikube`
-  * Note: it may take a while to fully install. Please be patient.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-3. Confirm that minikube is successfully installed by running the following command: 
-  * `which minikube`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-4. Start the minikube service with the following command:
-  * `minikube start`
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-5. Make sure you have kubectl installed to add deployments (should we add this as a stretch feature if we're trying to abstract the command line away from the user?):
-  * `brew install kubectl` 
-7. To generate pods, run the following commands:
-  * `kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.4`
-  * `kubectl expose deployment hello-minikube --type=NodePort --port=9090`
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-8. This will create a deployment that will genereate a pod with the provided image. Exposing the deployment simply means we are able to access the port. 
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
